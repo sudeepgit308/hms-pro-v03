@@ -1,4 +1,4 @@
-package com.nareshit.exceptionmapper;
+/*package com.nareshit.exceptionmapper;
 
 import org.springframework.stereotype.Controller;
 
@@ -13,7 +13,7 @@ public class CustomExceptionMapper extends RuntimeException {
 		this.statusCode = statusCode;
 	}
 
-	/*public String getMessage() {
+	public String getMessage() {
 		return message;
 	}
 	public void setMessage(String message) {
@@ -24,7 +24,8 @@ public class CustomExceptionMapper extends RuntimeException {
 	}
 	public void setStatusCode(int statusCode) {
 		this.statusCode = statusCode;
-	}*/
+	}
 	
 
 }
+*/

@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.orm.jpa.vendor.HibernateJpaSessionFactoryBean;
 
 @SpringBootApplication
+
 public class AdminServiceApplication {
 
 	public static void main(String[] args) {

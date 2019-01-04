@@ -17,7 +17,7 @@ public class AdminMapper {
 		admin.setEmail(adminBean.getEmail());
 		admin.setPassword(adminBean.getPassword());
 		admin.setConfPswd(adminBean.getConfPswd());
-		admin.setMobile(adminBean.getMobile());
+		admin.setMobile(Long.parseLong(adminBean.getMobile()));
 		admin.setStatus((adminBean.isStatus()));
 		admin.setHospId(adminBean.getHospId());
 				return admin;
@@ -31,7 +31,7 @@ public class AdminMapper {
 		adminBean.setEmail(admin.getEmail());
 		adminBean.setPassword(admin.getPassword());
 		adminBean.setConfPswd(admin.getConfPswd());
-		adminBean.setMobile(admin.getMobile());
+		adminBean.setMobile(admin.getMobile().toString());
 		adminBean.setStatus((admin.isStatus()));
 		adminBean.setId(admin.getId());
 		adminBean.setHospId(admin.getHospId());

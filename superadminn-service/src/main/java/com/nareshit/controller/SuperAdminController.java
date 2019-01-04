@@ -5,15 +5,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.context.request.WebRequest;
 
-import com.nareshit.exceptionmapper.CustomExceptionMapper;
-import com.nareshit.exceptionmapper.ErrorDetails;
 import com.nareshit.service.SuperAdminService;
 
 @ControllerAdvice
@@ -40,10 +36,4 @@ public class SuperAdminController {
 
 	}
 
-	@ExceptionHandler(CustomExceptionMapper.class)
-	public final ResponseEntity<ErrorDetails> handleException(CustomExceptionMapper cm, WebRequest req) {
-		ErrorDetails ed = new ErrorDetails("enter valid data", cm.getMessage());
-		req.getDescription(false);
-		return new ResponseEntity<ErrorDetails>(ed, HttpStatus.BAD_REQUEST);
-	}
 }

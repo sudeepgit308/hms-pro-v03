@@ -20,7 +20,7 @@ import javax.persistence.UniqueConstraint;
 public class Admin extends UserProfile implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-	@Column(unique=true)
+	
 	private String hospId;
 
 	public String getHospId() {

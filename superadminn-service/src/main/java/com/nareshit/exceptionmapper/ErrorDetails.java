@@ -1,4 +1,4 @@
-package com.nareshit.exceptionmapper;
+/*package com.nareshit.exceptionmapper;
 
 public class ErrorDetails {
 	private String msg;
@@ -11,3 +11,4 @@ public class ErrorDetails {
 	
 
 }
+*/
