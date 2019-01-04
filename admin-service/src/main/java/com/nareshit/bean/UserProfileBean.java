@@ -24,7 +24,7 @@ public class UserProfileBean implements Serializable {
 	private String firstName;
 	private String lastName;
 	private String email;
-	private String mobile;
+	private Long mobile;
 	private String password;
     
 
@@ -64,11 +64,12 @@ public class UserProfileBean implements Serializable {
 		this.email = email;
 	}
 
-	public String getMobile() {
+
+	public Long getMobile() {
 		return mobile;
 	}
 
-	public void setMobile(String mobile) {
+	public void setMobile(Long mobile) {
 		this.mobile = mobile;
 	}
 

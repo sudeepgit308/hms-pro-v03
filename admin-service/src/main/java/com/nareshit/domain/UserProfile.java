@@ -30,7 +30,7 @@ public class UserProfile implements Serializable {
 	private String firstName;
 	@Column(nullable = false)
 	private String lastName;
-	@Column(nullable = false, unique = true)
+	@Column(nullable = false)
 	private String email;
 	@Column(nullable = false)
 	private Long mobile;
