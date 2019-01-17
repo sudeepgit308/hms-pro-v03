@@ -9,6 +9,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,7 +29,7 @@ public class AdminController {
 
 	@Autowired
 	private IAdminRepository adminRepo;
-
+   @CrossOrigin(origins="http://192.168.0.102:4200")
 	@GetMapping(value = "/getAllAdmins")
 	public ResponseEntity<List<AdminBean>> getAdminBoard() {
 
